@@ -1,0 +1,131 @@
+@import "global-css-rules.css";
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+/* Grid container */
+main {
+    display: grid;
+
+    grid-template-rows: 20vh 20vh 30vh 30vh;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    
+    grid-template-areas: 
+    "header header header"
+    "text   text   text"
+    "form   form   form"
+    "other  other  other";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+header > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 1vh;
+    list-style: none;
+}
+
+header ul > li {
+    padding: 1rem;
+    margin: 0;
+}
+
+section.text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.text h1, section.text h2, section.text h5 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+section.text > h5.error {
+    color: var(--error-color);
+    text-decoration: underline #18191b75;
+}
+
+section.text > h4.error {
+    color: var(--error-color);
+}
+
+section.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.form > form  {
+    display: flex;
+    flex-direction: column;
+}
+
+section.form > form input {
+    text-align: center;
+    margin-top: 1em;
+    width: 17em;
+    padding: 1em;
+}
+
+section.other, section.other2 {
+    grid-area: other;
+    display: flex;
+    justify-content: center;
+}
+
+section.other2 {
+    margin-top: 1rem;
+    font-size:0.8em
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Grid container */
+    main {
+        display: grid;
+
+        grid-template-rows: 20vh 45vh 15vh 20vh;
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    
+        grid-template-areas: 
+        "text   text   text"
+        "form   form   form"
+        "other  other  other"
+        "header header header";
+    }
+
+    section.text {
+        margin-top: 5vh;
+    }
+
+    header {
+        justify-content: space-evenly;
+        background: var(--navbar-color);
+    }
+
+    header > ul {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section.other2 {
+        margin-top: 2.4rem;
+        font-size:0.8em
+    }
+
+}

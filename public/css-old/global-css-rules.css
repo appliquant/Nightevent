@@ -1,0 +1,48 @@
+:root {
+    --background-color: white;
+    --font-color: black;
+    --link-color: black;
+    --link-color-hover: #000000cf;
+    --navbar-color: #eee /*#f6f6f6*/;
+    --error-color: rgba(16, 18, 16, 0.92);
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling of scroller */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    opacity: .65;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+	text-align: center;
+	background-color: #ffffff;
+	border: black solid 0.1em;
+	padding-bottom: calc(.5em - 1px);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: calc(.5em - 1px);
+}
+
+button:focus {
+    outline: black solid 0.1em;
+}

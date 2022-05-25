@@ -1,0 +1,29 @@
+@import "global-css-rules.css";
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+/* Grid container */
+main {
+
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 30vh 30vh 40vh;
+
+    grid-template-areas: 
+    "navbar main"
+    "navbar main"
+    "navbar main";
+}
+
+nav {
+    grid-area: navbar;
+    background: hotpink;
+}
+
+div.main {
+    grid-area: main;
+    background: salmon;
+}

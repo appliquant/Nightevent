@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/register.js"></script>
+    <title>Register - Event Ground</title>
+</head>
+<body>
+    
+<main>
+
+    <header>
+        <ul>
+            <li><a href="#">Event Ground</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="#">App</a></li>
+        </ul>
+    </header>
+
+    <section class="text">
+            <h1 style="margin-top: 0;">Event Ground</h1>
+            <h2>Register</h2>
+            <% if (message) { %>
+                <h5 class="error"><%= message %></h5>
+            <% } %>
+            <!-- error, wrong email or/and password. -->
+    </section>
+
+    <section class="form">
+        <form action="/register" method="POST" accept-charset="utf-8">
+
+            <div class="part-one" id="part-one">
+
+                <label>
+                    <input name="fullname" type="text" placeholder="Enter your name"
+                    required autofocus>
+                </label>
+
+                <label>
+                    <input name="orgname" type="text" placeholder="Enter your organisation name" required>
+                </label>
+
+                <button type="button" onclick="nextStep();">Next</button>
+            </div>
+
+            <div class="part-two" id="part-two">
+                
+                <label>
+                    <input name="email" type="email" placeholder="Enter your email" required autofocus>
+                </label>
+
+                <label>
+                    <input name="password" type="password" placeholder="Enter your password" required
+                        autocomplete="off" minlength="8" maxlength="32">
+                </label>
+
+                <button type="submit">Register</button>
+                
+            </div>
+
+            <section class="other2">
+                <span>&nbsp;<a href="#">By creating an account, you accept terms of privacy</a></span>
+            </section>
+
+        </form>
+        
+    </section>
+
+    <!-- <section class="other">
+        <span><a href="#">Create an account |</a></span>
+        <span>&nbsp;<a href="#">Forgot password</a></span>
+    </section> -->
+
+    <!-- <section class="other2">
+        <span>&nbsp;<a href="#">By signin, you accept terms of privacy</a></span>
+    </section> -->
+
+</main>
+
+</body>
+</html>

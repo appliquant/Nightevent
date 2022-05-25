@@ -1,0 +1,5 @@
+1 - Commentaires webflow
+2 - Enlever attributs data-
+3 - Enlever scripts
+4 - Changer fichier css
+5 - Update les liens (/, /d/dashboard...)

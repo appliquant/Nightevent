@@ -1,0 +1,48 @@
+Todo:
+
+-- Couts
+    x. Calculer couts (nom domaine, heroku, okta, stripe, digitalOcean) - À compléter
+
+-- Design
+    x. Design page connection - fini
+    x. Design page forgot password - fini
+    x. Design page register, mettre bouton retour arrière - fini
+    x. Page 404 error - fini
+    x. Design dashboard - À compléter
+    x. Optimiser pour ecran 
+    x. Favicon
+
+-- Légal
+    x. Privacy terms
+
+-- Register system (https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md)
+    x. Password strengh meter vuejs (https://www.npmjs.com/package/vue-password-strength-meter)
+    x. Envoyer email pour activer compte - fini
+    x. Limite sur cb d'email on envoi
+
+
+-- Login system
+
+-- Recover password System
+    x. envoyer email avec nom/prenom - fini
+
+-- Delete account system
+    x. Demander mdp (comme github delete project)
+
+-- Securite
+    x. Ajouter captcha sur les pages avec des forms
+    x. Rate limiter
+    x. Express session options review
+    x. Sql injection mongodb
+    x. two factor auth
+    x. handle emojis
+    x. Ne pas autoriser anciens navigateurs (internet explorer)
+    x. Ne pas permettre a qqun de créer un compte avec xx.@nightevent.me
+    x. Sanitize input
+
+--marketing (https://www.youtube.com/watch?v=TnUO6tdmscI)
+    x. Demander email page '/' - fini (call to action)
+    x. Niche influenceurs ex: instagram tags (#event)
+    x. Referal link ex: refer and get 100$ credit?
+    x. Creer un hashtag ex: #nightevent
+    x. Faire fonction addToEmailList()

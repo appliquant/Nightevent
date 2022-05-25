@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login - Event Ground</title>
+</head>
+<body>
+    
+<main>
+
+    <header>
+        <ul>
+            <li><a href="#">Event Ground</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="#">App</a></li>
+        </ul>
+    </header>
+
+    <section class="text">
+            <h1 style="margin-top: 0;">Event Ground</h1>
+            <h2>Login</h2>
+            <% if (message) { %>
+                <h5 class="error"><%= message %> </h5>
+            <% } %>
+    </section>
+
+    <section class="form">
+        <form action="/login" method="POST" accept-charset="utf-8">
+            <label>
+                <input style="margin-top: 0;" name="email" type="email" placeholder="Enter your email" required autofocus>
+            </label>
+
+            <label>
+                <input name="password" type="password" placeholder="Enter your password" required
+                    autocomplete="off" minlength="8" maxlength="32">
+            </label>
+
+            <button type="submit">Sign In</button>
+        </form>
+        
+    </section>
+
+    <section class="other">
+        <span><a href="/register">Create an account |</a></span>
+        <span>&nbsp;<a href="/recover">Forgot password</a></span>
+    </section>
+
+    <section class="other2">
+        <span>&nbsp;<a href="#">By signin, you accept terms of privacy</a></span>
+    </section>
+
+</main>
+
+</body>
+</html>
